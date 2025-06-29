@@ -1,0 +1,5 @@
+com/gabriel/taskmanager/TaskManagerApplication.class
+com/gabriel/taskmanager/model/Task.class
+com/gabriel/taskmanager/repository/TaskRepository.class
+com/gabriel/taskmanager/service/TaskService.class
+com/gabriel/taskmanager/controller/TaskController.class

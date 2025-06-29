@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>To-do List Manager</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <h1>To-do List Manager</h1>
+
+        <nav>
+            <button onclick="showSection('list')">📋 Show all tasks</button>
+            <button onclick="showSection('create')">➕ Create new task</button>
+            <button onclick="showSection('search')">🔍 Search task</button>
+        </nav>
+
+        <section id="list-section" class="active">
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="create-section">
+            <form id="task-form">
+                <input type="text" id="title" placeholder="Task Title" required />
+                <textarea id="description" placeholder="Task Description"></textarea>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+
+        <section id="search-section">
+            <input type="text" id="search-input" placeholder="Enter task ID or title" />
+            <button id="search-btn">Buscar</button>
+            <ul id="search-result"></ul>
+        </section>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
+
